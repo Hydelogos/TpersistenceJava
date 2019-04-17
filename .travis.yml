@@ -1,1 +1,8 @@
 language: java
+install:
+  - mvn install
+  - mvn sonar:sonar \
+  -Dsonar.projectKey=Hydelogos_TpersistenceJava \
+  -Dsonar.organization=hydelogos-github \
+  -Dsonar.host.url=https://sonarcloud.io \
+  -Dsonar.login=1360f8f5c34a90b9a32d4886e1fbdbfb40e8d04a
